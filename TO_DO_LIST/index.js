@@ -23,3 +23,11 @@ document.querySelector('#push').onclick = function(){
         }
     }
 }
+const push = document.getElementById('push');
+push.addEventListener('click', function handleClick(event){
+    event.preventDefault();
+    const task = document.getElementById('task');
+    console.log(task.value)
+    task.value = '';
+
+});
